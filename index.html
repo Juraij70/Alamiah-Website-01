@@ -1,284 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wide Al Alamiah - POS Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <nav class="main-nav">
-            <img src="img/Comany03.png" alt="" class="logo">
-    
-            <ul class="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-            <ul class="right-menu">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <header class="showcase">
-            <div class="showcase02">
-                <h2>POS Machine</h2>
-            <p>
-                Upgrade Your Business with Cutting-edge POS Technology
-            </p>
-            </div>
-            <a href="#" class="btn">
-                Shop now <i class="fas fa-chevron-right"></i>
+      <nav class="main-nav">
+        <!-- HAMBURGER BUTTON - Now on the left -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- RIGHT MENU with shop icon - Now on the left -->
+        <ul class="right-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
             </a>
-        </header>
+          </li>
+        </ul>
 
-        <section id="about-us">
-            <div class="about-image">
-                <!-- Replace 'image-source.jpg' with your actual image source -->
-                <img src="img/aboutus.png" alt="Wide Al Alamiah POS Machine">
-            </div>
-            <div class="about-content">
-                <p class="alin">At Wide Al Alamiah, we are at the forefront of revolutionizing business transactions with our cutting-edge Point of Sale (POS) solutions. Specializing in seamless and efficient payment systems, our state-of-the-art POS machines are equipped with sophisticated software that goes beyond mere transactions. We pride ourselves on providing a holistic solution, offering real-time inventory management and insightful analytics for informed decision-making. Committed to excellence, our mission is to empower businesses with the tools they need to thrive in today's dynamic market. Join us on this journey of innovation and efficiency, where every interaction is a step towards a more prosperous and successful future.</p>
-            </div>
-        </section>
+        <!-- LOGO - Now on the right -->
+        <img src="img/Comany03.png" alt="Wide Al Alamiah Logo" class="logo" />
 
-        <section>
-            <h1>Our Product</h1>
-        </section>
+        <!-- MAIN MENU - stays the same -->
+        <ul class="main-menu" id="main-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Benefits</a></li>
+          <li><a href="#contact-us" class="scroll-link">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
 
-        <section class="home-cards">
-            <div class="card">
-                <img src="img/pos01.png" alt="">
-                <h3>State of the Art POS Machine</h3>
-                <p>
-                    Cutting-edge efficiency and innovation with state-of-the-art POS machine, designed to elevate transactions and empower businesses.
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div>
-                <img src="img/pos02.1.png" alt="">
-                <h3>Updated Software</h3>
-                <p>
-                    Optimize your business with our POS machine, offering advanced software for streamlined transactions, live inventory control, and data-driven insights.
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div>
-                <img src="img/install01.png" alt="">
-                <h3>Free Installation Service</h3>
-                <p>
-                    Simplify setup with our POS machine – enjoy complimentary on-site installation for seamless integration at your location.
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div>
-                <img src="img/pos04.png" alt="">
-                <h3>Tablets and Gadgets</h3>
-                <p>
-                    Ensure continuous and reliable access to your system through a diverse range of devices, thoughtfully provided to meet your specific needs.
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </section>
-    
-        
-        <section class="xbox">
-            <div class="content">
-                <h2>Installation & Configuration</h2>
-                <p>
-                    Experience the utmost convenience with our complimentary installation service— a testament to our commitment to your satisfaction. Our skilled professionals are dedicated to ensuring a seamless setup tailored to your needs, bringing our products and services to life effortlessly. Elevate your experience with hassle-free installation, allowing you to focus on what matters most: the optimal utilization of our cutting-edge solutions. Trust us to handle the intricacies of installation, delivering a service that goes beyond expectations and reflects our dedication to providing unparalleled support for your business growth.                </p>
-                <a href="#" class="btn install">
-                    More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </section>
+      <!-- OVERLAY - Add this AFTER the nav (before showcase) -->
+      <div class="menu-overlay" id="menu-overlay"></div>
+      <header class="showcase">
+        <div class="showcase02">
+          <h2>POS Machine</h2>
+          <p>Upgrade Your Business with Cutting-edge POS Technology</p>
+        </div>
+        <a href="#contact-us" class="btn scroll-link">
+          Shop now <i class="fas fa-chevron-right"></i>
+        </a>
+      </header>
 
-        <section>
-            <h1>Our Clients</h1>
-        </section>
+      <section id="about-us">
+        <div class="about-image">
+          <img src="img/aboutus.png" alt="Wide Al Alamiah POS Machine" />
+        </div>
+        <div class="about-content">
+          <p class="alin">
+            At Wide Al Alamiah, we are at the forefront of revolutionizing
+            business transactions with our cutting-edge Point of Sale (POS)
+            solutions. Specializing in seamless and efficient payment systems,
+            our state-of-the-art POS machines are equipped with sophisticated
+            software that goes beyond mere transactions. We pride ourselves on
+            providing a holistic solution, offering real-time inventory
+            management and insightful analytics for informed decision-making.
+            Committed to excellence, our mission is to empower businesses with
+            the tools they need to thrive in today's dynamic market. Join us on
+            this journey of innovation and efficiency, where every interaction
+            is a step towards a more prosperous and successful future.
+          </p>
+        </div>
+      </section>
 
-        <section class="home-cards">
-            <div class="client">
-                <img src="img/c01.png" alt="">
-                <h3>State of the Art POS Machine</h3>
-                <p>
-                    swift and secure payment solutions for a seamless customer experience.
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div class="client">
-                <img src="img/c02.png" alt="">
-                <h3>New Surface Laptop 3</h3>
-                <p>
-                    Express yourself powerfully with a thin, light and elegant design, faster performance and upto 11.5 hours battery life
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div class="client">
-                <img src="img/c03.png" alt="">
-                <h3>New Surface Laptop 3</h3>
-                <p>
-                    Express yourself powerfully with a thin, light and elegant design, faster performance and upto 11.5 hours battery life
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div class="client">
-                <img src="img/c04.png" alt="">
-                <h3>New Surface Laptop 3</h3>
-                <p>
-                    Express yourself powerfully with a thin, light and elegant design, faster performance and upto 11.5 hours battery life
-                </p>
-                <a href="#">Learn More <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </section>
+      <section>
+        <h1>Our Products</h1>
+      </section>
 
-        <section class="carbon dark">
-            <div class="content">
-                <h2>Carbon DiOxide Ultimate</h2>
-                <p>
-                    Express yourself powerfully with a thin, light and elegant design, faster performance and upto 11.5 hours battery life
-                </p>
-                <a href="#" class="btn install">
-                    Join Now <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </section>
+      <section class="home-cards">
+        <div class="card">
+          <img src="img/pos01.png" alt="" />
+          <h3>State of the Art POS Machine</h3>
+          <p>
+            Cutting-edge efficiency and innovation with state-of-the-art POS
+            machine, designed to elevate transactions and empower businesses.
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div>
+          <img src="img/pos02.1.png" alt="" />
+          <h3>Updated Software</h3>
+          <p>
+            Optimize your business with our POS machine, offering advanced
+            software for streamlined transactions, live inventory control, and
+            data-driven insights.
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div>
+          <img src="img/install01.png" alt="" />
+          <h3>Free Installation Service</h3>
+          <p>
+            Simplify setup with our POS machine – enjoy complimentary on-site
+            installation for seamless integration at your location.
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div>
+          <img src="img/pos04.png" alt="" />
+          <h3>Tablets and Gadgets</h3>
+          <p>
+            Ensure continuous and reliable access to your system through a
+            diverse range of devices, thoughtfully provided to meet your
+            specific needs.
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
 
-        <section class="follow">
-            <p>Follow Us on Social Media</p>
-            <a href="https//facebook.com">
-                <!-- <img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt=""> -->
-                <img src="img/facebook.png" alt="" class="fb">
-            </a>
-            <a href="https//facebook.com">
-                <!-- <img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt=""> -->
-                <img src="img/instagram.png" alt="" class="fb">
-            </a>
-            <a href="https//facebook.com">
-                <!-- <img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt=""> -->
-                <img src="img/tiktok.png" alt="" class="fb">
-            </a>
-        </section>
-        <section id="contact-us">
-            <h1>Contact Us</h1>
-            <form action="#" method="post" class="contact-form">
-                <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-        
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-        
-                <label for="location"></label>
-                <input type="text" id="location" name="location" placeholder="Your Location" required>
-        
-                <label for="message"></label>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button class="submit01" type="submit">Submit</button>
-            </form>
-        </section>
-    
-        <section class="links">
-            <div class="links-inner">
-                <ul>
-                    <li>
-                        <h3>Popular POS Machines</h3>
-                    </li>
-                    <li><a href="#">Touchscreen Cash Register</a></li>
-                    <li><a href="#">Wireless Point of Sale Systems</a></li>
-                    <li><a href="#">Mobile POS Terminals</a></li>
-                    <li><a href="#">Barcode Scanners</a></li>
-                    <li><a href="#">POS Receipt Printers</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>POS Software</h3>
-                    </li>
-                    <li><a href="#">Inventory Management</a></li>
-                    <li><a href="#">Sales Reporting</a></li>
-                    <li><a href="#">Employee Management</a></li>
-                    <li><a href="#">Customer Relationship Management</a></li>
-                    <li><a href="#">Integration with E-commerce</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>Industries Served</h3>
-                    </li>
-                    <li><a href="#">Retail</a></li>
-                    <li><a href="#">Restaurant</a></li>
-                    <li><a href="#">Hospitality</a></li>
-                    <li><a href="#">Healthcare</a></li>
-                    <li><a href="#">Small Business</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>POS Accessories</h3>
-                    </li>
-                    <li><a href="#">Cash Drawers</a></li>
-                    <li><a href="#">Barcode Labels</a></li>
-                    <li><a href="#">Receipt Paper Rolls</a></li>
-                    <li><a href="#">Card Readers</a></li>
-                    <li><a href="#">POS Mounts and Stands</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>Support and Services</h3>
-                    </li>
-                    <li><a href="#">Product Manuals</a></li>
-                    <li><a href="#">Technical Support</a></li>
-                    <li><a href="#">Training Programs</a></li>
-                    <li><a href="#">Warranty Information</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>About Us</h3>
-                    </li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Mission and Values</a></li>
-                    <li><a href="#">Team Members</a></li>
-                    <li><a href="#">Partnerships</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                </ul>
-            </div>
-            
-        </section>
-           
-        <footer class="footer">
-            <div class="footer-inner">
-                <div><i class="fas fa-globe fa-2x"></i>
-                    English (United States) 
-                </div>
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy & Cookies</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Trademarks</a></li>
-                    <li><a href="#">Safety & Co</a></li>
-                    <li><a href="#">About our Ads</a></li>
-                    <li><a href="#">® Wide Al Alamiah 2020</a></li>
-                </ul>
-            </div>
-        </footer>
+      <section class="xbox">
+        <div class="content">
+          <h2>Installation & Configuration</h2>
+          <p class="full-text">
+            Experience the utmost convenience with our complimentary
+            installation service a testament to our commitment to your
+            satisfaction. Our skilled professionals are dedicated to ensuring a
+            seamless setup tailored to your needs, bringing our products and
+            services to life effortlessly. Elevate your experience with
+            hassle-free installation, allowing you to focus on what matters
+            most: the optimal utilization of our cutting-edge solutions. Trust
+            us to handle the intricacies of installation, delivering a service
+            that goes beyond expectations and reflects our dedication to
+            providing unparalleled support for your business growth.
+          </p>
+          <p class="mobile-text">
+            Enjoy free, professional installation by our expert team. We handle
+            the entire setup process seamlessly, so you can focus on maximizing
+            your business with our cutting-edge POS solutions hassle-free and
+            tailored to your needs.
+          </p>
+          <a href="#contact-us" class="btn install scroll-link">
+            More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h1>Our Clients</h1>
+      </section>
+
+      <section class="home-cards">
+        <div class="client">
+          <img src="img/c01.png" alt="" />
+          <h3>State of the Art POS Machine</h3>
+          <p>
+            swift and secure payment solutions for a seamless customer
+            experience.
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="client">
+          <img src="img/c02.png" alt="" />
+          <h3>New Surface Laptop 3</h3>
+          <p>
+            Express yourself powerfully with a thin, light and elegant design,
+            faster performance and upto 11.5 hours battery life
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="client">
+          <img src="img/c03.png" alt="" />
+          <h3>New Surface Laptop 3</h3>
+          <p>
+            Express yourself powerfully with a thin, light and elegant design,
+            faster performance and upto 11.5 hours battery life
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="client">
+          <img src="img/c04.png" alt="" />
+          <h3>New Surface Laptop 3</h3>
+          <p>
+            Express yourself powerfully with a thin, light and elegant design,
+            faster performance and upto 11.5 hours battery life
+          </p>
+          <a href="#contact-us" class="scroll-link"
+            >Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="carbon dark">
+        <div class="content">
+          <h2>Why Choose Wide Al Alamiah?</h2>
+          <p>
+            We combine innovation with reliability to deliver POS solutions that
+            transform your business operations. Our commitment to excellence
+            ensures you get the most advanced technology with dedicated support
+            every step of the way.
+          </p>
+          <a href="#contact-us" class="btn install scroll-link">
+            Learn More <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="follow">
+        <p>Follow Us on Social Media</p>
+        <a href="https//facebook.com">
+          <img src="img/facebook.png" alt="" class="fb" />
+        </a>
+        <a href="https//facebook.com">
+          <img src="img/instagram.png" alt="" class="fb" />
+        </a>
+        <a href="https//facebook.com">
+          <img src="img/tiktok.png" alt="" class="fb" />
+        </a>
+      </section>
+
+      <section id="contact-us">
+        <h1>Contact Us</h1>
+        <form action="#" method="post" class="contact-form">
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="location"></label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Your Location"
+            required
+          />
+
+          <label for="message"></label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button class="submit01" type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="links">
+        <div class="links-inner">
+          <ul>
+            <li><h3>Popular POS Machines</h3></li>
+            <li><a href="#">Touchscreen Cash Register</a></li>
+            <li><a href="#">Wireless Point of Sale Systems</a></li>
+            <li><a href="#">Mobile POS Terminals</a></li>
+            <li><a href="#">Barcode Scanners</a></li>
+            <li><a href="#">POS Receipt Printers</a></li>
+          </ul>
+          <ul>
+            <li><h3>POS Software</h3></li>
+            <li><a href="#">Inventory Management</a></li>
+            <li><a href="#">Sales Reporting</a></li>
+            <li><a href="#">Employee Management</a></li>
+            <li><a href="#">Customer Relationship Management</a></li>
+            <li><a href="#">Integration with E-commerce</a></li>
+          </ul>
+          <ul>
+            <li><h3>Industries Served</h3></li>
+            <li><a href="#">Retail</a></li>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Hospitality</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Small Business</a></li>
+          </ul>
+          <ul>
+            <li><h3>POS Accessories</h3></li>
+            <li><a href="#">Cash Drawers</a></li>
+            <li><a href="#">Barcode Labels</a></li>
+            <li><a href="#">Receipt Paper Rolls</a></li>
+            <li><a href="#">Card Readers</a></li>
+            <li><a href="#">POS Mounts and Stands</a></li>
+          </ul>
+          <ul>
+            <li><h3>Support and Services</h3></li>
+            <li><a href="#">Product Manuals</a></li>
+            <li><a href="#">Technical Support</a></li>
+            <li><a href="#">Training Programs</a></li>
+            <li><a href="#">Warranty Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><h3>About Us</h3></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Mission and Values</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">Partnerships</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div>
+            <i class="fas fa-globe fa-2x"></i>
+            English (United States)
+          </div>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy & Cookies</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Trademarks</a></li>
+            <li><a href="#">Safety & Co</a></li>
+            <li><a href="#">About our Ads</a></li>
+            <li><a href="#">® Wide Al Alamiah 2020</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
-</body>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>
